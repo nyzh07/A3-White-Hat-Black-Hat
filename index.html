@@ -73,8 +73,121 @@
             vizElement.parentNode.insertBefore(scriptElement, vizElement);
         </script><br><br>
 
-        <!-- Add yours here riva -->
+        <!-- Black Hat Visualization -->
         <h3>2. Black Hat</h3>
+        <p>This visualization presents kilograms of CO2-equivalent emissions per 1,000 US dollars from 2014 to 2022—but there's a twist. 
+            Despite appearing to show an exponential rise in emissions, the graph actually misrepresents the data. Through the use of 
+            distorted Y-axis scaling, deceptive transformations, and misleading labels, the visualization creates a false impression of 
+            rapid growth. In truth, CO2 emissions per economic output have been gradually decreasing over time, not increasing as the chart suggests.
+        </p>
+        
+
+        <ol>
+            <li><strong>The first technique we used was to transform the data through a cumulative calculation:</strong></li>
+            <ol>
+                <li>Instead of displaying the CO2 emissions for each individual year, this visualization presents the cumulative total from 2014 to 2022. 
+                    This means that each year’s emissions are added to the previous years’, creating a running total. As a result, the values naturally 
+                    increase over time, which can misleadingly suggest a rise in annual emissions when in reality, the yearly figures may be declining.
+                </li>
+                <ul>
+                    <li>For example, in 2014-2016, the actual CO2 emissions generated per 1,000 US dollars are 0.39, 0.37, and 0.36 kilograms, respectively. 
+                        However, because we show the running total of emissions, the actual plotted points are 0.39, 0.76, and 1.11 kilometers. This makes 
+                        it seem like the CO2 emissions are increasing per year instead of decreasing.
+                    </li>
+                </ul>
+            </ol> <br>
+
+            <li><strong>The second technique we used was to exaggerate the increase through Y-axis distortion:</strong></li>
+            <ol>
+                <li>First, we intentionally hid the Y-axis bar so that viewers couldn’t immediately recognize the irregular spacing between marks.</li>
+                <li>Then, we plotted an exaggerated exponential curve to imply that CO2 emissions are rapidly increasing each year.</li>
+                <li>Lastly, for each year, we plot the manipulated values (from cumulative calculations) onto the exponential line.</li>
+                <ul>
+                    <li>Without this manipulation, the data would be best represented by a steady, linear trend. However, by layering these techniques, 
+                        the line of best fit appears exponential, falsely suggesting an accelerating emissions crisis.
+                    </li>
+                </ul>
+            </ol> <br>
+
+            <li><strong>The last technique we used was to obfuscate the labels:</strong></li>
+            <ol>
+                <li>The chart title states that it displays CO2 emissions per 1,000 dollars in the United States, which suggests a straightforward year-by-year 
+                    comparison. However, a closer look at the Y-axis label reveals that the values represent a running total, not the annual emissions. This 
+                    subtle discrepancy can easily mislead viewers into thinking the chart shows yearly data, when in fact, the emissions are cumulatively stacked.</li>
+            </ol> <br>
+            
+            <li>For a finishing touch, we decided to make the line red to emphasize the sense of urgency and danger associated with rising emissions. Red is often psychologically 
+                associated with warnings, heat, and alarm, so using it here amplifies the emotional impact of the visualization.
+            </li>
+        </ol>
+
+        <p>This visualization might appeal to someone trying to emphasize the urgency of climate change, regardless of what the data actually shows .Their goal may be to trigger 
+            an emotional response—like concern or alarm—by using visual tricks that suggest the situation is getting worse. By exaggerating trends and hiding the true values, 
+            the chart leads viewers to believe that climate change is rapidly accelerating, even if the data doesn’t fully support that narrative.
+        </p>
+        <div class='tableauPlaceholder' id='viz1743802655321' style='position: relative'>
+            <noscript><a href='#'><img alt='CO2 Emissions per 1,000 Dollars in the United States ' 
+                src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bl&#47;BlackHat_17437878464000&#47;Sheet1&#47;1_rss.png' 
+                style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'>
+                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+                    <param name='embed_code_version' value='3' /> 
+                    <param name='site_root' value='' />
+                    <param name='name' value='BlackHat_17437878464000&#47;Sheet1' />
+                    <param name='tabs' value='no' />
+                    <param name='toolbar' value='yes' />
+                    <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bl&#47;BlackHat_17437878464000&#47;Sheet1&#47;1.png' /> 
+                    <param name='animate_transition' value='yes' />
+                    <param name='display_static_image' value='yes' />
+                    <param name='display_spinner' value='yes' />
+                    <param name='display_overlay' value='yes' />
+                    <param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                
+                    <script type='text/javascript'>                    
+                    var divElement = document.getElementById('viz1743802655321');                    
+                    var vizElement = divElement.getElementsByTagName('object')[0];                    
+                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    
+                    var scriptElement = document.createElement('script');                    
+                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+                    </script>
+        
+    </div>
+    <h4><strong>References to data resources.</strong></h4>
+    <h5>Be sure to list the data source you used. If your work adapts or builds on 
+        existing visualization examples, please cite those as well.</h5>
+    <div>
+        <p>Air emissions - Greenhouse gas emissions Inventories (2024). OECD Data Explorer. 
+            <a href="https://stats.oecd.org/Index.aspx?DataSetCode=AIR_GHG" target="_blank">
+              https://stats.oecd.org/Index.aspx?DataSetCode=AIR_GHG
+            </a>
+          </p>
+        
+          <p>Yang, F. (2025). Lab 6: EDA & Tableau. CMSC 471. 
+            <a href="https://fumeng-yang.github.io/CMSC471/handouts/lab6-handout.html" target="_blank">
+              https://fumeng-yang.github.io/CMSC471/handouts/lab6-handout.html
+            </a>
+          </p>
+        
+          <p>Yang, F. (2025). Visual Encodings, Perception & Cognition, Color Theory, and Task & Interaction Lectures. CMSC 471. 
+            <a href="https://fumeng-yang.github.io/CMSC471/" target="_blank">
+              https://fumeng-yang.github.io/CMSC471/
+            </a>
+          </p>
+    </div>
+
+    <h4><strong>An overview of your development process.</strong></h4>
+    <h5>Describe how the work was split among the team members. Include a commentary on
+        the development process, including answers to the following questions: Roughly how much time did you spend developing your 
+        application (in people-hours)? What aspects took the most time?</h5>
+    <div>
+        <p>Each member of the team created one visualization and wrote the corresponding writeup. We collaborated 
+            on dataset selection, what we wanted to show through the two visualizations, and Tableau use and troubleshooting. 
+            We also reviewed and edited the writeups and embedded our Tableau visualizations in an HTML webpage. We each spent 
+            about 4 hours developing the visualizations and writeups, and 2 hours putting everything in our public webpage. 
+            This totals to about 10 hours. The most time consuming aspects were familiarizing ourselves with the data and how 
+            to manipulate it in Tableau. It was difficult to work with the data with the same approach we took for the sample 
+            data from the in-class lab. We had to perform additional filtering and computation to achieve what we wanted in 
+            each chart. 
+        </p>
     </div>
 </body>
 
