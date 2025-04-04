@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 3: White Hat/Black Hat</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="container">
+        <!-- Centers content and sets max width -->
+        <h1>Assignment 3: White Hat/Black Hat</h1>
+        <h3>1. White Hat</h3>
+        <strong>The Dataset</strong>
+        <p>The dataset we used for the White Hat visualization is the Greenhouse Gas Emissions data. We used data from
+            years 2014 to 2022 for total emissions excluding land use and forestry, measured in thousands of kilograms
+            of CO2-equivalent emissions per person. </p>
+        <p>We chose to focus on how the total amount of greenhouse gas emissions have changed over time across the
+            world, which led us to filter the data solely into the year, the total emissions, and the reference area. We
+            chose to include all pollutants, since all of them contribute to the effect of the greenhouse gas presence
+            in the atmosphere.</p>
+        <strong>Design Choices to Maximize Clarity and Accuracy</strong>
+        <p>We created a stacked area chart which is separated by reference area, represented by different colors. The
+            color encodings are explained through the legend, and the filter allows viewers to select specific reference
+            areas they would like to view data for. The reference areas are sorted alphabetically, both in the
+            legend/filter and in the visualization, which allows for quick lookup by area name.</p>
+        <p>The area chart allows viewers to more easily pinpoint when there is no more data after a certain year for a
+            reference area compared to lines or marks, so they do not mistake the lack of data for a downward trend,
+            which may lead to accidental bias. The dataset is missing a lot of data for countries like India, China,
+            Saudi Arabia, Brazil and Indonesia, so it was imperative to communicate that lack of data to avoid potential
+            bias and maintain transparency. </p>
+        <p>We also computed the average value of emissions per reference area across 2014 to 2022 by filtering the
+            emissions data by reference area using Excel and calculating the average. This allows us to compare the
+            total emissions in each year to the average observed in each reference area. It also provides a rough but
+            quick comparison between emissions of different reference areas. </p>
+        <p>Since we want to maximize clarity, we added a tooltip function that will show the reference area, year,
+            emissions for that year, and average emissions over 2014 to 2022 for that area. The combination of the
+            tooltip and filtering will allow viewers to more precisely explore the data to ensure accuracy in the
+            conclusions they draw or trends they discover.</p>
+        <div class="tableauPlaceholder" id="viz1743800678642" style="position: relative">
+            <noscript><a href="#"><img alt="Greenhouse Gas Emissions Across the World "
+                        src="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Gr&#47;GreenhouseGasEmissions_17437986549300&#47;GreenhouseGasEmissionsAcrosstheWorld&#47;1_rss.png"
+                        style="border: none" /></a></noscript><object class="tableauViz" style="display: none">
+                <param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F" />
+                <param name="embed_code_version" value="3" />
+                <param name="site_root" value="" />
+                <param name="name"
+                    value="GreenhouseGasEmissions_17437986549300&#47;GreenhouseGasEmissionsAcrosstheWorld" />
+                <param name="tabs" value="no" />
+                <param name="toolbar" value="yes" />
+                <param name="static_image"
+                    value="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Gr&#47;GreenhouseGasEmissions_17437986549300&#47;GreenhouseGasEmissionsAcrosstheWorld&#47;1.png" />
+                <param name="animate_transition" value="yes" />
+                <param name="display_static_image" value="yes" />
+                <param name="display_spinner" value="yes" />
+                <param name="display_overlay" value="yes" />
+                <param name="display_count" value="yes" />
+                <param name="language" value="en-US" />
+            </object>
+        </div>
+        <script type="text/javascript">
+            var divElement = document.getElementById("viz1743800678642");
+            var vizElement = divElement.getElementsByTagName("object")[0];
+            vizElement.style.width = "100%";
+            vizElement.style.height = divElement.offsetWidth * 0.75 + "px";
+            var scriptElement = document.createElement("script");
+            scriptElement.src =
+                "https://public.tableau.com/javascripts/api/viz_v1.js";
+            vizElement.parentNode.insertBefore(scriptElement, vizElement);
+        </script><br><br>
+
+        <!-- Add yours here riva -->
+        <h3>2. Black Hat</h3>
+    </div>
+</body>
+
+</html>

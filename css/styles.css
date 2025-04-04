@@ -1,0 +1,23 @@
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    max-width: 1200px;
+    margin: 0px auto;
+    line-height: 1.8;
+}
+
+.container {
+    max-width: 800px;
+    margin: 2rem auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    text-indent: 50px;
+    margin: 0px;
+    padding: 0px;
+    line-height: 1.5em;
+}
